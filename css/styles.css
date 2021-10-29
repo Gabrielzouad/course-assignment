@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -9,8 +11,11 @@ body {
   font-size: 25px;
 }
 
+/* THIS IS HEADER*/
 header {
   background-color: #de663a;
+  z-index: 5;
+  position: relative;
 }
 
 .header-container {
@@ -20,20 +25,31 @@ header {
   height: 5em;
 }
 .header-container img {
-  width: 13em;
+  width: 15em;
   height: auto;
   margin: 0px;
 }
-
+.searchbar {
+  display: flex;
+  align-items: center;
+}
 .search {
   border-radius: 20px;
   border: 0;
   height: 3em;
-  width: 35em;
+  width: 50em;
+  padding: 20px;
+}
+
+.searchbar img {
+  width: 2.5em;
+  margin-left: -40px;
+  margin-top: 6px;
 }
 
 .search:focus {
-  border: none;
+  border: 3px solid black;
+  outline: none;
 }
 
 .top-right {
@@ -41,6 +57,78 @@ header {
   margin-right: 2em;
 }
 
-.fa-bars {
+.fas {
   padding: 1em;
+  font-size: 35px;
+}
+
+/* BACKGROUND AND TEXT*/
+
+.hero-image {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.hero-section h1 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.hero-section h2 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-family: "Oswald", sans-serif;
+  color: #373636;
+}
+/* CATEGORY AND INSTAGRAM*/
+
+.main {
+  display: flex;
+}
+.category {
+  display: flex;
+  flex: 4;
+  justify-content: center;
+  margin: 50px 0px 0px 0px;
+}
+
+.category h2 {
+  text-align: center;
+}
+
+.womens,
+.mens,
+.kids,
+.outlet {
+  align-self: center;
+  padding: 20px;
+}
+
+.informationtext {
+  text-align: center;
+  font-size: 35px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 2em 0 2em 0;
+}
+
+.rainydays {
+  width: 823px;
+  margin: 0 auto;
+  padding-bottom: 5em;
+}
+
+.rainydays h1 {
+  text-align: center;
+}
+
+.instagram-logo {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
 }
