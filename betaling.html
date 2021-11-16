@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rainy Days, Clothing, Camping, payment, currency"
+    />
+    <title>Betaling</title>
+    <script
+      src="https://kit.fontawesome.com/b4e58dc478.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/betaling.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img id="logo" src="images/rainydayslogo.png" />
+
+        <div class="searchbar">
+          <input class="search" type="text" />
+          <a class="searchbutton" href="#">
+            <img src="images/Hotspot.svg" alt="searchicon" />
+          </a>
+        </div>
+
+        <div class="top-right">
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="produktoversikt">
+          <table>
+            <tr>
+              <th>Kasse</th>
+              <th>Antall</th>
+              <th>Pris</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="produktinfo">
+                  <img src="images/guljakke.png" alt="gul boblejakke" />
+                  <p>
+                    Puffer Regnjakke <br />
+                    Rainy days
+                  </p>
+                </div>
+              </td>
+              <td><input type="number" value="1" /></td>
+              <td>699,- kr</td>
+            </tr>
+            <tr>
+              <th></th>
+              <th>Totalsum</th>
+              <th>699,- kr</th>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="bestilling">
+        <h2>Levering</h2>
+        <div class="levering">
+          <label for="Fornavn">Fornavn</label>
+          <input
+            type="Fornavn"
+            class="leveringinput"
+            id="fornavn"
+            placeholder="Fornavn"
+          />
+
+          <label for="Etternavn">Etternavn</label>
+          <input
+            type="Etternavn"
+            class="leveringinput"
+            id="etternavn"
+            placeholder="Etternavn"
+          />
+
+          <label>Hjemmeaddresse</label>
+          <input
+            type="gate"
+            class="leveringinput"
+            id="gate"
+            placeholder="Gate"
+          />
+
+          <label>Postnr</label>
+          <input
+            type="postnr"
+            class="leveringinput"
+            id="postnr"
+            placeholder="City"
+          />
+
+          <label>Fylke</label>
+          <input
+            type="fylke"
+            class="leveringinput"
+            id="fylke"
+            placeholder="fylke"
+          />
+
+          <label>Epost</label>
+          <input
+            type="mail"
+            class="leveringinput"
+            id="mail"
+            placeholder="Epost"
+          />
+
+          <label>Tlf</label>
+          <input
+            type="telefon"
+            class="leveringinput"
+            id="telefon"
+            placeholder="Telefon"
+          />
+
+          <h2>Betaling</h2>
+          <div class="kort-checkbox">
+            <input type="checkbox" id="kort" />
+            <p>Betal med kort</p>
+          </div>
+
+          <div class="vipps">VIPPS</div>
+
+          <label>Kortnummer</label>
+          <input
+            type="Kort"
+            class="leveringinput"
+            id="kort"
+            placeholder="Kortnummer"
+          />
+          <label>Utløpsdato</label>
+          <input
+            type="utløpsdato"
+            class="leveringinput"
+            id="utløpsdato"
+            placeholder="Utløpsdato"
+          />
+          <label>CVC</label>
+          <input type="cvc" class="leveringinput" id="cvc" placeholder="CVC" />
+        </div>
+
+        <div class="ordrebekreftelse">FULLFØR ORDRE</div>
+      </section>
+    </main>
+  </body>
+</html>
