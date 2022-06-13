@@ -10,7 +10,6 @@ Here i had the mission to create a website for Rainy days. A clothing brand suit
 
 ## Built With
 
-You can list a the tech stack that you've used over here
 
 - [HTML]
 - [CSS]
